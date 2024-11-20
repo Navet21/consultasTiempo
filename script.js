@@ -5,7 +5,7 @@ const boton = document.querySelector("#botonEnviar");
 const sugerenciasContainer = document.getElementById("sugerenciasContainer");
 
 async function obtenerClimaParaIslasCanarias() {
-  const apiKey = '37e727e45a1dbf2da8791de1d78b478e'; // Reemplaza con tu API key de OpenWeatherMap
+  const apiKey = ''; // Reemplaza con tu API key de OpenWeatherMap
 
   // Lista de las 8 islas Canarias con sus coordenadas
   const islas = [
