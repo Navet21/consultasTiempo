@@ -1,0 +1,88 @@
+body {
+    background-image: url("fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+    margin: 0; /* Asegura que no haya margen en el cuerpo */
+}
+
+.navbar{
+    border: solid 1px #A020F0;
+    border-radius: 15%;
+}
+
+.fuentes {
+    color: #FFFFFF; /* Blanco puro */
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); /* Sombra para mejorar contraste */
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.icono-clima {
+    position: absolute;
+    top: -20px; /* Ajusta para que se desplace hacia arriba */
+    right: -20px; /* Ajusta para que se desplace hacia la derecha */
+    width: 70px; /* Tamaño del icono */
+    height: 70px; /* Tamaño del icono */
+    z-index: 10; /* Asegura que esté sobre la card */
+}
+
+.card_personalizada{
+    background-color: #000; /* Negro */
+    color: #fff; /* Texto blanco para contraste */
+    border: none; /* Sin borde alrededor de la tarjeta */
+    border-radius: 8px; /* Opcional: bordes redondeados */
+}
+
+
+  /* Estilo del texto con borde púrpura */
+.text-bordered {
+    border: solid 1px #A020F0; /* Borde púrpura */
+    padding: 5px;
+    display: inline-block;
+    color: #FFFFFF; /* Blanco puro */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    border-radius: 4px;
+}
+
+#contenedorSugerencias {
+    display: flex;
+    flex-wrap: wrap; /* Para que se adapten al tamaño del contenedor */
+    gap: 10px; /* Espacio entre sugerencias */
+    justify-content: center; /* Centradas horizontalmente */
+    margin-bottom: 20px; /* Espacio con respecto a las cards */
+}
+
+.sugerencia-item {
+    padding: 5px 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #6f42c1;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #6f42c1;
+    cursor: pointer;
+    text-align: center;
+    min-width: 100px;
+}  
+
+.sugerencia-item:hover {
+    background-color: #6f42c1;
+    color: white;
+}
+
+#botonEliminarSugeridos {
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#botonEliminarSugeridos:hover {
+    background-color: #dc3545;
+    color: white;
+}
